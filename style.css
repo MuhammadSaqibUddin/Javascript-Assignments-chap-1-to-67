@@ -1,0 +1,154 @@
+*{ box-sizing: border-box;}
+.bluecolor {
+    color: #4169e1;
+}
+
+.main {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phone-div {
+    text-align: center;
+}
+
+.main .phone-div div {
+    padding: 10px;
+    border: 1px solid #4169e1;
+    width: 110px;
+    height: 150px;
+}
+
+.main .phone-div img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main .phone-div img:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    height: 18%;
+}
+
+.close {
+    float: right;
+    margin-top: 40px;
+    width: 80px;
+
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 2px 3px;
+}
+.counter-div{
+    margin: auto;
+    text-align: center;
+}
+.counter-div h1{
+    font-size: 50px;
+}
+.counter-div button{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.counter-div #num{
+    font-size: 100px;
+    color: #006400;
+
+}
+
+/* css for Signup page */
+.container input[type=text],.container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.container input[type=text]:focus,.container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.container hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.container button:hover {
+  opacity:1;
+}
+
+.container .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+

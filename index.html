@@ -20,38 +20,45 @@
     <div class="main">
         <div class="phone-div bluecolor">
             <div>
-                <img onclick="openModel()" src="images/Apple-iphone-x.jpg" alt="">
+                <img onclick="openModel(this)" src="images/Apple-iphone-x.jpg" alt="">
             </div>
             <p>Apple-iphone-x</p>
         </div>
 
         <div class="phone-div bluecolor">
             <div>
-                <img onclick="openModel()" src="images/HUAWEI Y9s.png" alt="">
+                <img onclick="openModel(this)" src="images/HUAWEI Y9s.png" alt="">
             </div>
             <p>HUAWEI Y9s</p>
         </div>
         <div class="phone-div bluecolor">
             <div>
-                <img onclick="openModel()" src="images/Infinix Hot 9.jpg" alt="">
+                <img onclick="openModel(this)" src="images/Infinix Hot 9.jpg" alt="">
             </div>
             <p>Infinix Hot 9</p>
         </div>
         <div class="phone-div bluecolor">
             <div>
-                <img onclick="openModel()" src="images/Samsung Galaxy A7.jpg" alt="">
+                <img onclick="openModel(this)" src="images/Samsung Galaxy A7.jpg" alt="">
             </div>
             <p>Samsung Galaxy A7</p>
         </div>
     </div>
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <p>Thanks for purchasing a phone from us.</p>
-            <button onclick="closeModel()" class="close">Ok</button>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-5">
+                    Thanks for purchasing a phone from us.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-
     </div> -->
+
 
     <!-- for chapter 43-48 Q:3 -->
     <!-- <table id="stutabl">
@@ -69,6 +76,7 @@
     onmouseover="changeImg('images/HUAWEI Y9s.png')"
     onmouseout="changeImg('images/Apple-iphone-x.jpg')"> -->
 
+
     <!-- for chapter 43-48 Q:5 -->
     <!-- <div class="counter-div">
         <h1>Counter</h1>
@@ -77,9 +85,9 @@
         <button onclick="decrease()">decrease</button>
     </div> -->
 
-    <!-- for chapter 49-52 Q:1 -->
 
-    <!-- <div class="container">
+    <!-- for chapter 49-52 Q:1 -->
+    <!-- <div class="container signup">
         <h1>Sign Up</h1>
         <p>Please fill this form to create an account.</p>
         <hr>
@@ -105,19 +113,140 @@
       </div> -->
 
     <!-- for chapter 49-52 Q:2 -->
-    <div id="main">
+    <!-- <div id="main">
         <img src="images/Apple-iphone-x.jpg" alt="" width="200px" height="200px">
         <p style="width: 500px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere error in
             incidunt veritatis iure
             accusantium blanditiis aliquam quam pariatur itaque accusamus eveniet consequatur unde illum est, quae enim
             temporibus.</p>
-        <p id="pera"style="width: 500px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <p id="pera" style="width: 500px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             <button href="javascript:void(0);" onclick="readMore()">Read more</button>
         </p>
+    </div> -->
+
+
+    <!-- for chapter 49-52 Q:3 -->
+    <!-- <div class="container stuform">
+        <div class="row bg-dark text-white text-center mb-3 p-3">
+            <div class="col">
+                <h1>Student Registration Form</h1>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="First Name" maxlength="30">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" maxlength="30">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="mobile">Contact</label>
+            <input type="tel" class="form-control" id="mobile" name="contact" placeholder="0000-0000000"
+                pattern="[0-9]{4}-[0-9]{7}" minlength="12" required>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" id="male" value="male">
+                        <label class="form-check-label" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" id="female" value="female">
+                        <label class="form-check-label" for="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Class</legend>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Class" id="8th" value="8th">
+                        <label class="form-check-label" for="8th">
+                            8th
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Class" id="9th" value="9th">
+                        <label class="form-check-label" for="9th">
+                            9th
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Class" id="10th" value="10th">
+                        <label class="form-check-label" for="10th">
+                            10th
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Class" id="11th" value="11th">
+                        <label class="form-check-label" for="11th">
+                            11th
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Class" id="12th" value="12th">
+                        <label class="form-check-label" for="12th">
+                            12th
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary mt-3 mb-2" onclick="addStudent()">Submit</button>
+        <button type="submit" class="btn btn-success mt-3 mb-2 ml-3" onclick="viewData()">View</button>
     </div>
 
+    <div id="hiddenform">
+        <div id="formdiv">
+            <h1></h1>
+            <label for="firstname">First Name</label>
+            <input class="checkinput" type="text" id="firstname" maxlength="30" placeholder="First Name">
+            <label for="lastname">Last Name</label>
+            <input class="checkinput" type="text" id="lastname" maxlength="30" placeholder="Last Name"> <br><br>
+            <label for="emailid">Email</label>
+            <input class="checkinput" type="email" id="emailid" placeholder="Email">
+            <label for="contactno">Contact</label>
+            <input class="checkinput" type="tel" id="contactno" placeholder="0000-0000000"> <br><br>
+            <label>Gender</label>
+            <input class="checkinput" type="radio" name="gender" id="boy" value="male">
+            <label for="boy">Male</label>
+            <input class="checkinput" type="radio" name="gender" id="girl" value="female">
+            <label for="girl">Female</label>
+            <br><br>
+            <label>Class</label>
+            <input class="checkinput" type="radio" name="class" id="8" value="8th">
+            <label for="8">8th</label>
+            <input class="checkinput" type="radio" name="class" id="9" value="9th">
+            <label for="9">9th</label>
+            <input class="checkinput" type="radio" name="class" id="10" value="10th">
+            <label for="10">10th</label>
+            <input class="checkinput" type="radio" name="class" id="11" value="11th">
+            <label for="11">11th</label>
+            <input class="checkinput" type="radio" name="class" id="12" value="12th">
+            <label for="12">12th</label> <br><br>
+            <button onclick="updateForm()" id="updatebtn">Update</button>
+            <button onclick="closeForm()" id="closebtn">Close</button>
+        </div>
 
+    </div> -->
 
+    <!-- for chapter 58-67 Q:1 and Q:2 -->
+    <!-- <div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id="first-name"/><label for="last-name">Last Name</label><input type="text" id="last-name"/><label for="email">Email</label><input type="text" id="email"/></div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div> -->
 
 
     <script src="app.js"></script>
@@ -131,6 +260,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <!-- <script src="app.js">
+        alert("this is inside of body element.");
+    </script> -->
 </body>
+<!-- <script src="app.js">
+        alert("this is outside of body element.");
+    </script> -->
 
 </html>
